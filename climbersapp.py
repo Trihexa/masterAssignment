@@ -9,7 +9,11 @@ from expedition import Expedition
 
 
 def main():
-    pass
+    with open("expeditions.json") as file:
+        data = json.load(file)
+
+        for i in data:
+            print(i)
 
 
 if __name__ == "__main__":
